@@ -1,0 +1,35 @@
+.main-bg-yellow {
+  background: #f2ff05;
+  position: relative;
+  color: #000;
+  z-index: 3;
+}
+
+.main-bg-bleu {
+  background: #0042aa;
+  position: relative;
+  color: #FFF;
+  z-index: 3;
+}
+
+.title-color{
+  font-weight: 700;
+}
+.title-color,
+.title-color a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2.title-color {
+  margin-bottom: 30px;
+}
+
+.title-color {
+  font-weight: 500;
+  color: #fff;
+}
+
+.landing-page .header .title-color {
+  color: #3C4858;
+}

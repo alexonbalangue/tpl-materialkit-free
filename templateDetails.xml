@@ -1,0 +1,123 @@
+<?xml version="1.1" encoding="utf-8"?>
+<extension version="3.6" type="template" client="site" method="upgrade">
+	<name>materialkit</name>
+	<version>1.0</version>
+	<creationDate>March 23th 2016</creationDate>
+	<author>Alexon Balangue</author>
+	<authorUrl>www.alexonbalangue.me</authorUrl>
+	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
+	<copyright>Copyright (C) 2017 Alexon Balangue. All rights reserved.</copyright>
+	<description>TPL_MATERIALKIT_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>assets</folder>
+		<folder>html</folder>
+		<folder>language</folder>
+	</files>
+	<positions>
+		<!-- CONTENT-HOME -->
+		<position>information</position>
+		<position>ideas</position>
+		<position>event</position>
+		<position>security</position>
+		<position>mooc</position>
+		<position>shop</position>
+		<position>payment</position>
+		<position>login</position>
+		<position>register</position>		
+		<position>local</position>
+		<position>team</position>
+		<!-- FOOTER -->
+		<position>footer1</position>
+		<position>footer2</position>
+		<position>footer3</position>
+		<position>footer4</position>
+		<!-- base and advestising -->
+		<position>materialkit_menu</position>
+		<position>banner-footer</position>
+		<position>banner-mfooter</position>
+		<position>banner-header</position>
+		<position>banner-mheader</position>
+		<position>banner-sidebar</position>
+		<position>banner-msidebar</position>
+		<position>sidebar-right</position>
+		<position>sidebar-left</position>
+		<position>breadcrumb</position>
+		<position>footer</position>
+		<position>referencer</position>
+		<position>debug</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_materialkit.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_materialkit.sys.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_materialkit.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.tpl_materialkit.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="groups-html"
+					type="list"
+					default="offline"
+					label="TPL_MATERIALKIT_METHODHTML_LABEL"
+					description="TPL_MATERIALKIT_METHODHTML_DESC">
+						<option value="offline">Neutral offline</option>
+						<option value="boostrap3-home">Boostrap V3.3.7 (Home)</option>
+						<option value="boostrap3-component">Boostrap V3.3.7 (Component)</option>
+						<option value="boostrap4-home">Boostrap V4.x (Home) = Nothing</option>
+						<option value="boostrap4-component">Boostrap V4.x (Component) = Nothing</option>
+				</field>
+				<field name="groups-method"
+					type="list"
+					default="production"
+					label="TPL_MATERIALKIT_METHODDESIGNER_LABEL"
+					description="TPL_MATERIALKIT_METHODDESIGNER_DESC">
+						<option value="custom">TPL_MATERIALKIT_METHODDESIGNER_OPTION_CUSTOM</option>
+						<option value="production">TPL_MATERIALKIT_METHODDESIGNER_OPTION_PROD</option>
+				</field>
+			</fieldset>
+			<fieldset name="AMP-HTMLviews" label="AMP-HTML views">
+				<field name="ampHTML"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default=""
+					label="AMP-HTML"
+					description="TPL_MATERIALKIT_AMPHTML_DESC">
+						<option value="amp">JYes</option>
+						<option value="">JNo</option>
+				</field>
+			</fieldset>
+			<fieldset name="Hidding" label="Hidding support">
+				<field name="Pages-js-default"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default=""
+					label="TPL_MATERIALKIT_HIDEJSDEFAULT_LABEL"
+					description="TPL_MATERIALKIT_HIDEJSDEFAULT_DESC">
+						<option value="">Keep default</option>
+						<option value="home">home/accueil</option>
+						<option value="component">Component</option>
+				</field>
+			</fieldset>
+			<fieldset name="TPLuniversal" label="Edit templates">
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_MATERIALKIT_LOGO_LABEL"
+					description="TPL_MATERIALKIT_LOGO_LABEL" />				
+			</fieldset>
+		</fields>
+	</config>
+<!--
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited by Alexon Balangue">https://jupdates.alexonbalangue.me/update/joomla/general.xml</server>
+		<server type="extension" priority="2" name="TPL - universal">https://jupdates.alexonbalangue.me/update/joomla/xml/tpl_universal.xml</server>
+	</updateservers>
+	//-->
+</extension>
